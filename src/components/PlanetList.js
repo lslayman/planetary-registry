@@ -1,17 +1,26 @@
 import React from "react"
 import Planet from "./Planet"
 
-function PlanetList() {
+function PlanetList({table}) {
+    const listPlanets = table.map((planet) => {
+        console.log(planet)
+        return(<Planet
+            key={planet.id}
+            planet={planet} 
+        />
+    )})
+
+    // console.log(listPlanets)
     return(
         <table>
-            <tbody>
+            <tbody> 
                 <tr>
                     <th>Name</th>
                     <th>Climate</th>
                     <th>Terrain</th>
                     <th>Population</th>
-                </tr>
-                {/** Render a list of <Planet> components here. */}
+                </tr>   
+                {listPlanets}
             </tbody>
         </table>
     );

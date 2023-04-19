@@ -1210,6 +1210,13 @@
       "climate": "cold",
       "terrain": "rocky",
       "population": "1"
+    },
+    {
+      "name": "Zoltar",
+      "climate": "temperate",
+      "terrain": "rainforest",
+      "population": "3",
+      "id": 61
     }
   ]
 }
